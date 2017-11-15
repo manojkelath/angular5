@@ -1,5 +1,6 @@
 import { appRoutes } from './app.routes';
 import { Component } from '@angular/core';
+import { log } from 'util';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +14,5 @@ export class AppComponent {
   constructor() {
     this.routes = appRoutes;
   }
+
 }

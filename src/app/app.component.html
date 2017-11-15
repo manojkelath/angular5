@@ -1,14 +1,18 @@
-<!-- <app-title-bar></app-title-bar> -->
+<div class="container pen">
+  <div class="row">
+    <div class="col-sm-12">
+
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li *ngFor="let route of routes">
+              <a [routerLink]=route.path>{{route.data && route.data.title? route.data.title:''}}</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
 
 <router-outlet></router-outlet>
-
-
-
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" *ngFor="let route of routes">
-          {{route.data && route.data.title? route.data.title:''}}
-        </a>
-    </ul>
-
-<!-- <app-warning></app-warning> -->

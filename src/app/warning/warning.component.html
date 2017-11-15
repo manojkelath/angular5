@@ -1,11 +1,10 @@
+<div>
+  <button ng-init="toggle=true;" class="btn btn-primary" (click)="toggle=!toggle">Toggle paragraph</button>
 
+  <div *ngIf="toggle">
+    <p> This is a togglable paragraph</p>
+  </div>
 
-<button ng-init="toggle=true;" class="btn btn-primary" (click)="toggle=!toggle">Toggle paragraph</button>
-
-<div  *ngIf="toggle">
-  <p> This is a togglable paragraph</p>
+  <button class="btn btn-primary" (click)="increment()">Add</button>
+  <p *ngFor="let val of values" [ngStyle]="val>4?{'color':'blue'}:''">{{val}}</p>
 </div>
-
-<button class="btn btn-primary" (click)="increment()">Add</button>
-<p *ngFor="let val of values" [ngStyle]="val>4?{'color':'blue'}:''">{{val}}</p>
-
