@@ -1,3 +1,4 @@
+import { appRoutes } from './app.routes';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  routes;
+
+  constructor() {
+    this.routes = appRoutes;
+  }
 }

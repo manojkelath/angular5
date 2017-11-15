@@ -7,21 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WarningComponent implements OnInit {
 
- incrementValue=0;
- values=[0];
+ incrementValue= 0;
+ values= [0];
 
 
 
-  increment(){
+  increment() {
     this.values.push(++this.incrementValue);
   }
 
-  constructor() { 
-    
+  constructor() {
+
   }
 
   ngOnInit() {
-    
+
   }
 
 }

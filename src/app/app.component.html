@@ -1,2 +1,14 @@
+<!-- <app-title-bar></app-title-bar> -->
 
-<app-warning></app-warning>
+<router-outlet></router-outlet>
+
+
+
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" *ngFor="let route of routes">
+          {{route.data && route.data.title? route.data.title:''}}
+        </a>
+    </ul>
+
+<!-- <app-warning></app-warning> -->
