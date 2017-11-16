@@ -1,3 +1,8 @@
-<p>
-  drawer works!
-</p>
+<div class="container" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="col-md-4">
+    <input type="text" placeholder=" component 2">
+    <button type="button" class="btn btn-secondary">enter</button>
+  </div>
+</div>
+
+<div *ngIf="subscription" class="alert alert-success">{{subscription}}</div>

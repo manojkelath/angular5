@@ -1,10 +1,9 @@
-<div>
-  <button ng-init="toggle=true;" class="btn btn-primary" (click)="toggle=!toggle">Toggle paragraph</button>
+<div class="container" role="toolbar" aria-label="Toolbar with button groups">
 
-  <div *ngIf="toggle">
-    <p> This is a togglable paragraph</p>
+
+  <div class="col-md-4">
+    <input type="text" placeholder=" this is component 1" [(ngModel)]="message" name="message">
+    <button type="button" class="btn btn-secondary" (click)="sendMessage(message)">enter</button>
   </div>
 
-  <button class="btn btn-primary" (click)="increment()">Add</button>
-  <p *ngFor="let val of values" [ngStyle]="val>4?{'color':'blue'}:''">{{val}}</p>
 </div>

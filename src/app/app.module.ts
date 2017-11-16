@@ -10,7 +10,7 @@ import { DrawerComponent } from './drawer/drawer.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { routing } from './app.routes';
-
+import { MessageService } from './app.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,9 @@ import { routing } from './app.routes';
     FormsModule,
     routing
   ],
-  providers: [],
+  providers: [
+    MessageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

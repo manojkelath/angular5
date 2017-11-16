@@ -7,16 +7,16 @@ import { WarningComponent } from './warning/warning.component';
 export const appRoutes: Routes = [
     {
       path: 'warning', component: WarningComponent,
-      data: { title: 'Warning' }
+      data: { title: 'Component 1' }
     },
     {
       path: 'drawer',
       component: DrawerComponent,
-      data: { title: 'Drawer' }
+      data: { title: 'Component 2' }
     },
     {
       path: '',
-      redirectTo: '/drawer',
+      redirectTo: '/warning',
       pathMatch: 'full'
     },
     { path: '**', component: PageNotFoundComponent }
